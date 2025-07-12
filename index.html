@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nepal Tourism Management System</title>
+  <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+  <header>
+    <div><img src="HTML&CSS/logo.png" alt="Nepal Tourism Logo" width="80" /></div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Bookings</a>
+      <a href="#">Attractions</a>
+      <a href="#">Guides</a>
+      <a href="#">Reports</a>
+      <a href="#">Settings</a>
+    </nav>
+    <div>EN | NP</div>
+  </header>
+
+  <!-- HERO BANNER WITH BACKGROUND IMAGE -->
+  <section class="hero-banner">
+    <h1>Welcome to Nepal Tourism Management System</h1>
+    <p>Empowering travel experiences with seamless booking and management.</p>
+    <button>Explore Now</button>
+  </section>
+
+  <!-- MAIN CONTAINER -->
+  <div class="container">
+    <!-- SIDEBAR -->
+    <aside>
+      <a href="#">Dashboard</a>
+      <a href="#">Manage Tourists</a>
+      <a href="#">Manage Guides</a>
+      <a href="#">Manage Attractions</a>
+      <a href="#">Manage Bookings</a>
+      <a href="#">Safety Alerts</a>
+      <a href="#">Festival Discounts</a>
+      <a href="#">Reports</a>
+      <a href="#">Emergency</a>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- Stats -->
+      <div class="stats">
+        <div>Total Tourists</div>
+        <div>Total Guides</div>
+        <div>Total Bookings</div>
+        <div>Active Festivals</div>
+      </div>
+
+      <!-- Bookings table -->
+      <h2>Bookings</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Tourist</th>
+            <th>Guide</th>
+            <th>Attraction</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>001</td>
+            <td>John Doe</td>
+            <td>Pratima Neupane</td>
+            <td>Everest Base Camp</td>
+            <td>2025-07-12</td>
+            <td class="status-confirmed">Confirmed</td>
+            <td class="actions">
+              <a href="#">View</a> |
+              <a href="#">Edit</a> |
+              <a href="#">Validate</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Alerts and Discounts -->
+      <section class="alerts-discounts">
+        <h3>Safety Festival Alerts Discounts</h3>
+        <ul>
+          <li>Altitude Sickness Alert - Active</li>
+          <li>Monsoon Warning - Resolved</li>
+          <li>Dashain Festival - 15% Off</li>
+          <li>Tihar Festival - 10% Off</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>

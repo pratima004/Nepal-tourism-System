@@ -1,0 +1,194 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* HEADER */
+    header {
+      background-color: #004d40;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: bold;
+    }
+
+    /* HERO BANNER */
+    .hero-banner {
+      background: url("HTML&CSS/Background.jpg") no-repeat center center;
+      background-size: cover;
+      padding: 5rem 2rem;
+      color: white;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* dark overlay for better text visibility */
+    .hero-banner::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+
+    .hero-banner h1,
+    .hero-banner p,
+    .hero-banner button {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-banner h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-banner p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-banner button {
+      padding: 10px 25px;
+      font-size: 1rem;
+      background-color: #00695c;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero-banner button:hover {
+      background-color: #004d40;
+    }
+
+    /* CONTAINER for sidebar and main content */
+    .container {
+      display: flex;
+      min-height: 80vh; /* fill viewport */
+    }
+
+    /* SIDEBAR */
+    aside {
+      background-color: #00695c;
+      width: 200px;
+      padding: 2rem 1rem;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    aside::-webkit-scrollbar {
+  width: 6px;
+}
+
+aside::-webkit-scrollbar-thumb {
+  background-color: #004d40;
+  border-radius: 3px;
+}
+
+
+
+    aside a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      padding: 0.3rem 0.5rem;
+      border-radius: 3px;
+      transition: background-color 0.3s ease;
+    }
+
+aside a:hover {
+  background-color: #004d40;
+  color: #a5d6a7;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+    /* MAIN CONTENT */
+    main {
+      flex-grow: 1;
+      padding: 2rem;
+      background-color: #f8f8f8;
+      overflow-x: auto; /* horizontal scroll if needed */
+    }
+
+    /* TABLE styling */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 0.8rem;
+      text-align: left;
+    }
+
+    th {
+      background-color: #004d40;
+      color: white;
+    }
+
+    /* STATUS Confirmed styling */
+    td.status-confirmed {
+      color: green;
+      font-weight: bold;
+    }
+
+    /* Actions links */
+    td.actions a {
+      color: #00695c;
+      text-decoration: none;
+      margin-right: 0.5rem;
+      font-weight: bold;
+    }
+
+    td.actions a:hover {
+      text-decoration: underline;
+    }
+
+    /* Other textual sections in main */
+    .stats {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .stats > div {
+      background-color: #e0f2f1;
+      padding: 1rem 1.5rem;
+      border-radius: 6px;
+      font-weight: bold;
+      text-align: center;
+      flex: 1;
+    }
+
+    /* Right side mini info */
+    .alerts-discounts {
+      margin-top: 2rem;
+      background-color: #e0f2f1;
+      padding: 1rem;
+      border-radius: 6px;
+      font-weight: bold;
+      max-width: 300px;
+    }
+
+    .alerts-discounts ul {
+      list-style: disc inside;
+      margin-top: 0.5rem;
+      font-weight: normal;
+    }
